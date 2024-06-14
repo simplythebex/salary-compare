@@ -4,13 +4,13 @@ from django.db import models
 class User(models.Model):
     gender = models.CharField(max_length=30)
     role = models.CharField(max_length=30)
-    salary = models.IntegerField(default=0)
-    years_exp = models.IntegerField(default=0)
-    company_size = models.IntegerField(default=0)
-    industry = models.CharField(max_length=30)
-    age = models.IntegerField(default=0)
-    email = models.CharField(max_length=30)
-    education_level = models.CharField(max_length=30, default="null")
+    salary = models.CharField(max_length=30)
+    years_exp = models.CharField(max_length=30)
+    # company_size = models.IntegerField(default=0)
+    # industry = models.CharField(max_length=30)
+    # age = models.IntegerField(default=0)
+    # email = models.CharField(max_length=30)
+    # education_level = models.CharField(max_length=30, default="null")
 
     def __str__(self):
         return f"{self.gender} - {self.role} - {self.salary}"

@@ -5,6 +5,7 @@ from .views import UserListView
 
 router = routers.DefaultRouter()
 router.register(r'users', UserListView)
+# router.register(r'average', SalaryAverage)
 
 urlpatterns = [
     path('', include(router.urls)),

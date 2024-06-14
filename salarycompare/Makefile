@@ -5,3 +5,6 @@ make-migration:
 
 apply-migration:
 	python manage.py migrate
+
+run:
+	python manage.py runserver
